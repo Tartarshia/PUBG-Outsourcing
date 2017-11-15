@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    background-color: #1d1d1d;
+    overflow-x: hidden;
+    min-width: 720px;
+}
+
+.img img{
+    max-width: 720px;
+}
+
+.header-section {
+    color: #fff;
+    background-image: linear-gradient(270deg,#1d1d1d,#2c3e50);
+    padding: 30px;
+}
+.ui-toolbar {
+    background-color: #004050;
+}
+
+.feature-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.about-us h3 {
+    margin-bottom: 0;
+}
+
+p-fieldset.center {
+    text-align: center;
+}
+
+
+p-fieldset.center form{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}

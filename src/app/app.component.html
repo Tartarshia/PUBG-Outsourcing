@@ -1,20 +1,111 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
-  <img width="300" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div class="header-section introduction">
+    <div>
+        <span class="feature-title">{{title}}</span>
+        <span>Titan是目前射击类游戏中最棒的辅助软件，提供最强大的防检测技术与最完美的游戏体验，take the gun you want, eliminate enemy, get rich by earning gold，让你随心所欲的操控自己的游戏体验，成为游戏世界中的神。 </span>
+    </div>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
+<p-toolbar>
+    <div class="ui-toolbar-group-left">
+        <button pButton type="button" label="HOME首页" icon="fa-home" (click)="showFunc('home')"></button>
+        <button pButton type="button" label="HACKs功能介绍" icon="fa-spinner" (click)="showFunc('func')"></button>
+        <button pButton type="button" label="PURCHASE购买" icon="fa-shopping-cart" (click)="showFunc('shop')"></button>
+        <button pButton type="button" label="FAQ手册" icon="fa-book"></button>
+    </div>
+    
+    <!-- <div class="ui-toolbar-group-right">
+        English Text not Avaliable 
+        <p-inputSwitch onLabel="CHN" offLabel="ENG" [(ngModel)]="checked"></p-inputSwitch>
+    </div> -->
+</p-toolbar>
+
+<div class="ui-g" *ngIf="Panel =='home'">
+    
+    <div class="ui-g-8 ui-g-offset-2 ui-md-10 ui-md-offset-1">
+    <p-fieldset legend="关于Titan" [toggleable]="true" class="about-us">
+        <h3>多重保护</h3>
+        账号，通讯，主程序三重加密，保障你的安全
+        <br><h3>人性化体验</h3>
+        
+        精心设计的按键与辅助模式，提供最舒适的用户体验
+        <br><h3>快速升级</h3>
+        
+        我们会在游戏更新后的第一时间跟踪升级我们的程序
+        <br><h3>防检测（反弹护盾）</h3>
+        
+        完美规避包括BE EAC在内的多种主流检测程序。
+        <br><h3>超强兼容</h3>
+        
+        我们的程序提供PC全系统支持，无论你是win7，8还是10.
+        <br><h3>一键启动</h3>
+        
+        无需繁杂的登陆注册，使用通行证即可一键启动程序
+        <br><h3>VIP服务</h3>
+        
+        提供一站式通行证服务，一次购买即可获得Titan旗下所有软件的使用权.
+        <h3>精准算法</h3>
+        
+        同时具备单浮点与双浮点瞄准算法提供的超高精度，确保瞄准你想瞄准的任何位置。
+        <br><h3>完美契合</h3>
+        
+        软件程序与游戏程序完美契合，超低的CPU与内存占用保障你的游戏体验，让你几乎感觉不到它在运行。
+        <br><h3>完美技术储备</h3>
+        
+        雄厚的技术完备的团队保障确保软件程序的不断升级与新游戏的拓展。
+        <br><h3>超快连接</h3>
+        
+        专属独立服务器提供流畅的网络下载速度，
+        <br><h3>用户支持</h3>
+        
+        提供详细完善的使用手册，新手也可以一次运行成功。
+        <br>
+        </p-fieldset>
+
+    </div>
+</div>
+
+<div class="ui-g" *ngIf="Panel =='func'">
+
+    <div class="ui-g-8 ui-g-offset-2 ui-md-10 ui-md-offset-1">
+          
+
+        <p-fieldset legend="功能介绍" [toggleable]="true">
+        PUBG：<br>
+        人物透视<br>
+        物品透视<br>
+        载具透视<br>
+        雷达透视<br>
+        精准自瞄<br>
+        <br>
+        <br>
+        Upcoming：<br>
+        Rainbow Six：Siege<br>
+        Fortnite<br>           
+        <br>
+        </p-fieldset>
+          
+    </div>
+</div>
+
+<div class="ui-g" *ngIf="Panel =='shop'">
+    
+    <div class="ui-g-8 ui-g-offset-2 ui-md-10 ui-md-offset-1">
+        <p-fieldset legend="购买" class="center">
+
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="37PUGSCSGY3R4">
+                <input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/zh_XC/i/scr/pixel.gif" width="1" height="1">
+            </form>
+            
+        </p-fieldset>
+        
+    </div>
+</div>
+
+<p-toolbar>
+    <div class="ui-toolbar-group-right">
+        联系方式：titanmmp@mmptitan.net‍            
+    </div>
+</p-toolbar>
